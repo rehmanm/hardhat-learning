@@ -37,6 +37,14 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Greeter__factory>;
     getContractFactory(
+      name: "SelectorExample",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.SelectorExample__factory>;
+    getContractFactory(
+      name: "SkipContract",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.SkipContract__factory>;
+    getContractFactory(
       name: "VariableStorage",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.VariableStorage__factory>;
@@ -71,6 +79,16 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Greeter>;
+    getContractAt(
+      name: "SelectorExample",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.SelectorExample>;
+    getContractAt(
+      name: "SkipContract",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.SkipContract>;
     getContractAt(
       name: "VariableStorage",
       address: string,
