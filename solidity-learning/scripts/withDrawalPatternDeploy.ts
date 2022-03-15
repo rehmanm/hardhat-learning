@@ -84,7 +84,7 @@ async function main() {
 
   const tx3 = await withdrawlPatternTest
     .connect(addr2)
-    .becomeRichestWithPattern({ value: ethers.utils.parseEther("1") });
+    .becomeRichestWithPattern({ value: ethers.utils.parseEther("2") });
 
   const withDrawTransaction = await withDrawalDemoBySelfTest.getFunds(
     withdrawlPatternTest.address
