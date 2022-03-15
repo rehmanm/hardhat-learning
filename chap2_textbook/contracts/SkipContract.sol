@@ -37,5 +37,5 @@ contract SkipContract {
     function getFirst10WithSkip2() public pure returns (uint[] memory) {
         return ArrayIteratorLib.iterate(getSkipFunction(2));
     } 
-    
+    //Check Special Functions first
 }
